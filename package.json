@@ -1,0 +1,15 @@
+{
+  "name": "@useless-media/useless-docsify-tabs",
+  "description": "Simple docsify plugin for making tabs that work when embedded.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/useless-docsify-tabs.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/useless-media/useless-docsify-tabs.git"
+  }
+}
