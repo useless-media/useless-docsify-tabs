@@ -47,7 +47,12 @@
       document
         .querySelectorAll('li')
         .forEach((item) => {
-          if (item.parentElement.parentElement.classList.contains('useless-tab-container')) return;
+          if (
+            !item.firstChild ||
+            !item.firstChild.innerHTML ||
+            !item.firstChild.innerText ||
+            item.parentElement.parentElement.classList.contains('useless-tab-container')
+          ) return;
 
           const titleHtml = sanitize(item.firstChild.innerHTML);
           const text = item.firstChild.innerText;
